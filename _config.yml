@@ -8,30 +8,41 @@
 # URL VARIABLES
 #
 # url is your gh-pages base, following the pattern: username.github.io
-url: https://evanwill.github.io
+url: https://judaicadh.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /cb-gh-postcards
+baseurl: /morais-digital-repository
 # location of code, the full url to your github repository
-source-code: https://github.com/evanwill/cb-gh-postcards
+source-code: https://github.com/judaicadh/sabato-morais-repo
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Postcards Collections
+title: Sabato Morais Digital Repository
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: demo of two sided postcard objects
+tagline: The Sabato Morais Collection at University of Pennsylvania Libraries
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+description: "This is one website of the Sabato Morais Digitization Project, an effort to encode and display every document in the Sabato Morais Papers."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: judaicadh
 
 ##########
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: postcards_demo 
+metadata: morais_colenda_data_final
+
+##########
+# Site/Organization Branding 
+#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
+#   To remove the branding, comment out these values, or delete them. 
+#
+organization-name: "Judaica DH at the Penn Libraries"
+organization-link: https://judaicadh.library.upenn.edu/
+organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
+organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+
 
 ##########
 # GOOGLE SERVICES [optional!]

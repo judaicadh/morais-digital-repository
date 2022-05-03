@@ -1,11 +1,12 @@
 ---
 layout: default
+custom-foot: js/item-js.html
 ---
 
-<div class="container mt-2">
+<div class="container mt-2 mb-4">
     <ul class="breadcrumb h6">
-        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
-        <li class="breadcrumb-item text-secondary"><a class="text-dark" href="{{ '/browse.html' | absolute_url }}">Browse</a></li>
+        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/' | relative_url }}">Current Item</a></li>
+        <li class="breadcrumb-item text-secondary"><a class="text-dark" href="{{ '/browse.html' | relative_url }}">Browse</a></li>
         <li id="bc-title" class="breadcrumb-item active"></li>
     </ul>
 
@@ -32,7 +33,7 @@ layout: default
     {%- if site.data.theme.browse-buttons == true -%}
     <div class="text-center">
         <a id="prev-button" class="btn btn-secondary">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">Back to browse</a>
+        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}">Back to browse</a>
         <a id="for-button" class="btn btn-secondary">Next &raquo;</a>
     </div>
 

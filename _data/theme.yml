@@ -45,14 +45,14 @@ browse-buttons: true # true/false, adds previous/next arrows to item pages
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject;photographer;publisher # set the field to be featured in the cloud (if left blank, none will be generated)
+subjects-fields: metadata.personal_name;metadata.corporate_name[1] # set the field to be featured in the cloud (if left blank, none will be generated)
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location;state # set the field to be featured in the cloud
+locations-fields: metadata.geographic_subject # set the field to be featured in the cloud
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -80,9 +80,9 @@ year-nav-increment: 5 # set increments when auto gen nav years
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "objectid,filename,compound,title,description,item_information,postcard_type,photographer,date,subject,location,state,publisher,publisher_location,source,date_is_approximate,identifier,rights,standardized_rights,original_format,type,format,language,latitude,longitude,cdmid"
+metadata-export-fields: "objectid,metadata.title[1],metadata.date[1],metadata.description[1],metadata.personal_name,metadata.geographic_subject,identifier,metadata.item_type[1],metadata.format,metadata.rights,metadata.identifier[1],metadata.language,metadata.provenance[1],extent,metadata.relation[1],metadata.call_number[1],metadata.collection[1],colenda_link,iiif_manifest"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "postcard_type,photographer,subject,location,state,publisher,publisher_location,original_format,format"
+metadata-facets-fields: "metadata.personal_name,metadata.geographic_subject,metadata.item_type[1],metadata.format,metadata.language"
 
 ##########
 # ADVANCED OPTIONS
@@ -103,7 +103,7 @@ bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS
 base-font-size: 1.2em
-text-color: "#191919"
-link-color: "#17a2b8"
-base-font-family: # comment out for bootstrap defaults. e.g. Roboto
-font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+text-color: "#333333"
+link-color: "#011F5B"
+base-font-family: Roboto
+font-cdn: <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

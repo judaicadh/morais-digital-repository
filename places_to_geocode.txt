@@ -1,0 +1,186 @@
+Australia
+Australia -- South Brisbane
+Australia -- St. Kilda
+Barbados
+Barbados -- Fontabelle
+Canada
+Canada -- Aylmer
+Canada -- Montreal
+Canada -- Toronto
+Canada -- Winnipeg
+Curacao
+France
+France -- Lyon
+France -- Paris
+Germany
+Germany -- Berlin
+India
+India -- Mumbai
+Israel
+Israel -- Jerusalem
+Italy
+Italy -- Conselve
+Italy -- Padua
+Italy -- Rome
+Jamaica
+Jamaica -- Kingston
+Netherlands
+Netherlands -- Amsterdam
+New Zealand
+New Zealand -- Ashburton
+Palestine
+Palestine -- Jerusalem
+Poland
+Poland -- Breslau
+Romania
+Romania -- Bucharest
+Turkey
+Turkey -- Istanbul
+Ukraine
+Ukraine -- Kerementschug
+United Kingdom
+United Kingdom -- London
+United Kingdom -- Ramsgate
+United States --  New Jersey
+United States --  New Jersey -- Long Branch
+United States -- California
+United States -- California -- Oakland
+United States -- California -- San Francisco
+United States -- Colorado
+United States -- Colorado -- Denver
+United States -- Connecticut
+United States -- Connecticut -- Waterburg
+United States -- District of Columbia
+United States -- District of Columbia -- Washington
+United States -- Georgia
+United States -- Georgia -- Athens
+United States -- Georgia -- Atlanta
+United States -- Georgia -- Augusta
+United States -- Georgia -- Savannah
+United States -- Illinois
+United States -- Illinois -- Chicago
+United States -- Illinois -- Peoria
+United States -- Illinois -- Quincy
+United States -- Illinois -- Springfield
+United States -- Indiana
+United States -- Indiana -- Evansville
+United States -- Indiana -- Vincennes
+United States -- Indiana -- Waterloo
+United States -- Kansas
+United States -- Kansas -- Cawker City
+United States -- Kansas -- Oskaloosa
+United States -- Kentucky
+United States -- Kentucky -- Louisville
+United States -- Kentucky -- Owensborrow
+United States -- Kentucky -- Versailles
+United States -- Louisiana
+United States -- Louisiana -- New Orleans
+United States -- Maryland
+United States -- Maryland -- Baltimore
+United States -- Massachsetts -- Gloucester
+United States -- Massachusetts
+United States -- Massachusetts -- Boston
+United States -- Massachusetts -- Cambridge
+United States -- Massachusetts -- Charles River Village
+United States -- Massachusetts -- Magnolia
+United States -- Michigan
+United States -- Michigan -- Bay City
+United States -- Michigan -- Kalamazoo
+United States -- Minnesota
+United States -- Minnesota -- Minneapolis
+United States -- Minnesota -- St. Paul
+United States -- Missouri
+United States -- Missouri -- Bushberg
+United States -- Missouri -- Columbia
+United States -- Missouri -- Kansas City
+United States -- Missouri -- Osceola
+United States -- Missouri -- St. Louis
+United States -- Nebraska
+United States -- Nebraska -- Omaha
+United States -- New Hampshire
+United States -- New Hampshire -- Exter
+United States -- New Hampshire -- Hanover
+United States -- New Hampshire -- Maplewood
+United States -- New Hampshire -- Portsmouth
+United States -- New Jersey
+United States -- New Jersey -- Alliance
+United States -- New Jersey -- Asbury Park
+United States -- New Jersey -- Atlantic City
+United States -- New Jersey -- Cape Island
+United States -- New Jersey -- Cape May
+United States -- New Jersey -- Carmel
+United States -- New Jersey -- Hilltop Chews Landing
+United States -- New Jersey -- Jersey City
+United States -- New Jersey -- Moorsetown
+United States -- New Jersey -- Newark
+United States -- New Jersey -- Orange
+United States -- New Jersey -- Spring Lake
+United States -- New Jersey -- Summit
+United States -- New Jersey -- Trenton
+United States -- New Jersey -- Woodbine
+United States -- New Mexico
+United States -- New Mexico -- Albuquerque
+United States -- New York
+United States -- New York -- Albany
+United States -- New York -- Brooklyn
+United States -- New York -- Buffalo
+United States -- New York -- Glen Ridge
+United States -- New York -- Keene
+United States -- New York -- Leonardsville
+United States -- New York -- Lockport
+United States -- New York -- Long Island
+United States -- New York -- New York
+United States -- New York -- Newburgh
+United States -- New York -- Niagara Falls
+United States -- New York -- North River
+United States -- New York -- Rochester
+United States -- New York -- Rockaway Beach
+United States -- New York -- Saratoga Springs
+United States -- New York -- Sharon Springs
+United States -- New York -- Summit Mountain
+United States -- New York -- Syracuse
+United States -- New York -- Troy
+United States -- North Carolina
+United States -- North Carolina -- Asheville
+United States -- North Carolina -- Wilmington
+United States -- Ohio
+United States -- Ohio -- Cincinnati
+United States -- Ohio -- Cleveland
+United States -- Ohio -- Dayton
+United States -- Oregon
+United States -- Oregon -- Mount Tabor
+United States -- Oregon -- Portland
+United States -- Pennsylvania
+United States -- Pennsylvania -- Allegheny
+United States -- Pennsylvania -- Bradford
+United States -- Pennsylvania -- Chester
+United States -- Pennsylvania -- Germantown
+United States -- Pennsylvania -- Harrisburg
+United States -- Pennsylvania -- Jenkintown
+United States -- Pennsylvania -- Kennett Square
+United States -- Pennsylvania -- Lancaster
+United States -- Pennsylvania -- Philadelphia
+United States -- Pennsylvania -- Pittsburgh
+United States -- Pennsylvania -- Shamokin
+United States -- Pennsylvania -- Shenandoah
+United States -- Pennsylvania -- West Chester
+United States -- Pennsylvania -- Wilkes-Barre
+United States -- Rhode Island
+United States -- Rhode Island -- Newport
+United States -- South Carolina
+United States -- South Carolina -- Charleston
+United States -- South Carolina -- Sumter
+United States -- Texas
+United States -- Texas -- Austin
+United States -- Texas -- Dallas
+United States -- Texas -- Galveston
+United States -- Texas -- Houston
+United States -- Texas -- San Antonio
+United States -- Virginia
+United States -- Virginia -- Brandon
+United States -- Virginia -- Danville
+United States -- Virginia -- Gordonsville
+United States -- Virginia -- Norfolk
+United States -- Virginia -- Richmond
+United States -- West Virginia
+United States -- West Virginia -- Charleston

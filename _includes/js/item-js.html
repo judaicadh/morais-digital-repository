@@ -19,7 +19,7 @@
         document.getElementById("bc-title").innerHTML = objectTitle;
         document.getElementById("item-title").innerHTML = objectTitle;
         /* add object */ 
-        var format = record.format;
+        var format = record.metadata.format;
         var objectLink = '{{ "/objects/" | absolute_url }}' + record.filename;
         var itemImage, itemLink;
         if (format.includes('image')) {
@@ -42,14 +42,14 @@
 
         {% if stubs contains "timeline" %}
         /* add link to view on timeline */
-        if (record.date) {
+        if (record.metadata.date[1]) {
             var itemYear;
-            if (record.date.includes('-')) {
-                itemYear = record.date.split('-')[0];
+            if (record.metadata.date[1].includes('-')) {
+                itemYear = record.metadata.date[1].split('-')[0];
             } else if (record.date.includes('/')) {
-                itemYear = record.date.split('/').pop();
+                itemYear = record.metadata.date[1].split('/').pop();
             } else {
-                itemYear = record.date;
+                itemYear = record.metadata.date[1];
             }
             itemLink += '<a href="{{ "/timeline.html" | relative_url }}#' + itemYear + '" class="ml-2 btn btn-outline-dark">View on Timeline</a>';
         }
