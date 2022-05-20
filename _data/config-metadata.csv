@@ -1,7 +1,6 @@
 field,display_name,browse_link
 title,Title,false
 date,Date,false
-metadata.description[1],Transcription,false
 metadata.personal_name[1],Author,true
 metadata.personal_name[3],Addressee,true
 metadata.personal_name,People,true
@@ -19,3 +18,4 @@ metadata.call_number[1],Call Number,false
 metadata.collection[1],Collection,false
 colenda_link,Colenda Link,false
 iiif_manifest,IIIF Presentation Manifest,false
+metadata.description[1],Transcription,false

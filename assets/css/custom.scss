@@ -43,4 +43,10 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+pre {
+  white-space:pre-wrap;
+  font-family: {{ site.data.theme.base-font-family | default: '""' }};
+  font-size: {{ site.data.theme.base-font-family | default: '""' }};
+}
+
 @import "base", "theme-colors", "pages", "custom";
