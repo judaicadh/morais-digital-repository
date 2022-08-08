@@ -1,21 +1,21 @@
 field,display_name,browse_link
-title,Title,false
-date,Date,false
-metadata.personal_name[1],Author,true
-metadata.personal_name[3],Addressee,true
-metadata.personal_name,People,true
-metadata.geographic_subject,Places,true
-metadata.identifier[1],Identifier,false
-metadata.item_type[1],Type,true
-metadata.format[1],Format,false
-metadata.rights,Rights Statement,false
-metadata.identifier[1],Identifier,false
-metadata.language,Language,true
-metadata.provenance[1],Provenance,false
-extent,Extent,false
-metadata.relation[1], Collection Info,false
-metadata.call_number[1],Call Number,false
-metadata.collection[1],Collection,false
-colenda_link,Colenda Link,false
-iiif_manifest,IIIF Presentation Manifest,false
-metadata.description[1],Transcription,false
+title,Title,FALSE
+date-year,Date,FALSE
+metadata.personal_names,People,TRUE
+metadata.corporate_name[1],Corporate Name,TRUE
+metadata.geographic_subject,Place,TRUE
+metadata.identifier[1],Identifier,FALSE
+metadata.item_type[1],Type,TRUE
+metadata.format[1],Format,FALSE
+metadata.rights,Rights Statement,FALSE
+metadata.identifier[1],Identifier,FALSE
+metadata.language,Language,TRUE
+metadata.provenance[1],Provenance,FALSE
+metadata.notes[1],Extent,FALSE
+metadata.relation[1],Franklin Link,FALSE
+metadata.notes[3],Location Information,FALSE
+metadata.call_number[1],Call Number,FALSE
+metadata.collection[1],Collection,FALSE
+colenda_link,Colenda Link,FALSE
+iiif_manifest,IIIF Presentation Manifest,FALSE
+metadata.description[1],Transcription,FALSE

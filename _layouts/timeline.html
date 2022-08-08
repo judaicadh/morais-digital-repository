@@ -2,7 +2,7 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
-{%- assign raw-dates = site.data[site.metadata] | map: 'date' | compact | uniq -%}
+{%- assign raw-dates = site.data[site.metadata] | map: 'date-year' | compact | uniq -%}
 {%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- assign uniqueYears = clean-years | remove: " " | split: ";" | uniq | sort -%}
 {%- if site.data.theme.year-navigation -%}
@@ -35,21 +35,10 @@ layout: page
         </th>
         <td>
             <div class="row">
-                {%- assign inYear = items | where_exp: 'item', 'item.date contains year' -%}
+                {%- assign inYear = items | where_exp: 'item', 'item.date-year contains year' -%}
                 {% for item in inYear %}
                 <div class="col-lg-4 col-md-6">
-                    <a href="{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}" >
-                        {% if item.format contains 'application' or item.format contains 'audio' %}
-                        <div class="card"> 
-                            <div class="card-body text-center">
-                                <h4 class="card-title text-dark">{{ item.title }}</h4>
-                                <img class="lazyload img-thumbnail w-50" data-src="{% if item.format contains 'audio' %}{{ '/assets/img/audio.svg' | relative_url }}{% else %}{{ '/assets/img/pdf.svg' | relative_url }}{% endif %}" alt="{% if item.format contains 'audio' %}audio{% else %}PDF{% endif %} filetype thumbnail">
-                            </div>
-                        </div>
-                        {% else %}
-                        <img class="lazyload img-thumbnail" data-src="{% if item.youtubeid %}{{ 'https://img.youtube.com/vi/' | append: item.youtubeid | append: '/hqdefault.jpg' | relative_url }}{% else %}{{ item.filename | prepend: '/objects/' | relative_url }}{% endif %}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}">
-                        {% endif %}
-                    </a>
+                    <a href="{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}" >{{ item.title }}</a>
                 </div>
                 {% endfor %}
             </div>

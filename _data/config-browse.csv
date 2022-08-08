@@ -1,6 +1,5 @@
 field,display_name,btn,hidden
-title,Title,
-date,Date,
-metadata.geographic_subject,Place,true
-metadata.personal_name,People,true
-metadata.item_type[1],Type,
+title,Title,,
+date-year,Date,,
+metadata.geographic_subject,Place,TRUE,
+metadata.item_type[1],Type,TRUE,

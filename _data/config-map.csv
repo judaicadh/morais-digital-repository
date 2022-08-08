@@ -1,3 +1,4 @@
 field,display_name,search
-date,Date,true
-metadata.geographic_subject,Place,true
+title,Title,TRUE
+date-year,Date,TRUE
+metadata.geographic_subject,Place,TRUE

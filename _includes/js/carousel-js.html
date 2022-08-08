@@ -10,7 +10,7 @@
     var slides = "";
     for (i=0; i < {{ carousel-items | size | at_most: 9 }}; i++) {
         // calculate item image location
-        itemImg = "{{ '/objects/' | relative_url }}/" + carouselItems[i][1];
+        itemImg = carouselItems[i][1];
         // calculate item link
         itemLink = "{{ '/item.html' | absolute_url | append: '?id=' }}" + carouselItems[i][2];
         // create carousel slide 

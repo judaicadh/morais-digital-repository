@@ -20,7 +20,7 @@
         document.getElementById("item-title").innerHTML = objectTitle;
         /* add object */ 
         var format = record.format;
-        var objectLink = '{{ "/objects/" | absolute_url }}' + record.filename;
+        var objectLink = record.filename;
         var itemImage, itemLink;
         if (format.includes('image')) {
             itemImage= '<div class="gallery-img" data-src="' + objectLink + '"><img class="img-fluid" src="' + objectLink + '" alt="' + objectTitle + '"></div>';
@@ -30,7 +30,7 @@
                 itemLink += '<a class="dropdown-item" target="_blank" href="' + objectLink + '">' + record.filename + '</a>';
                 var compoundImages = record.compound.split(";");
                 for (let i = 0; i < compoundImages.length; i++) {
-                    var compoundLink = '{{ "/objects/" | absolute_url }}' + compoundImages[i];
+                    var compoundLink = compoundImages[i];
                     itemImage += '<div class="gallery-img mt-1" data-src="' + compoundLink + '"><img class="img-fluid" src="' + compoundLink + '" alt="part ' + i + ' of' + objectTitle + '"></div>';
                     /* add download dropdown */
                     itemLink += '<a class="dropdown-item" target="_blank" href="' + compoundLink + '">' + compoundImages[i] + '</a>';

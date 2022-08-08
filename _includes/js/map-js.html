@@ -1,4 +1,8 @@
+{%- if site.data.theme.icons -%}{% assign icons = site.data.theme.icons %}{% else %}
+{% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
+{% assign icons = cb_icons.icons %}{%- endif -%}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.latitude' -%}
+{%- assign coords = site.data.all_coord_items | where_exp: 'item','item.latitude' -%}
 {%- assign fields = site.data.config-map -%}
 <!-- load leaflet dependencies -->
 <script src="{{ '/assets/lib/leaflet/leaflet.js' | relative_url }}"></script>
@@ -11,12 +15,12 @@
 (function(){
     /* add collection map data */
     var geodata = { "type": "FeatureCollection", "features": [ 
-    {% for item in items %}
-    { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
-    { "title": {{ item.title | escape | jsonify }}, 
-    {% for f in fields %}{{ f.field | escape | jsonify }}: {{ item[f.field] | escape | jsonify }},{% endfor %}{% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }}, {% endif %}
-    "format": {{ item.format | jsonify }}, "filename": {{ item.filename | jsonify }}, "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
-    ]};
+       {% for item in coords %}
+       { "type":"Feature", "geometry":{ "type":"Point", "coordinates":[{{ item.longitude | strip }},{{ item.latitude | strip }}] }, "properties":
+       { "title": {{ item.title | jsonify }}, 
+       {% for f in fields %}{{ f.field | jsonify }}: {{ item[f.field] | jsonify }},{% endfor %}{% if item.youtubeid %} "youtube": {{ item.youtubeid | jsonify }}, {% endif %}
+       "format": {{ item.format | jsonify }}, {% if  item.filename contains '/' %}"filename": "{{ item.filename }}" {% else %}"filename":{{ '/objects/' | relative_url | append: item.filename | jsonify }}{% endif %}, "id": {{ item.objectid | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}
+       ]};
 
     /* init map and set zoom */
     if (window.location.hash) {
@@ -55,7 +59,14 @@
     var options = {
         title: 'Search Map Items',
         locationholder: 'Search map items...',
-        threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }} 
+        threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }},
+        showResultFct: function(feature, container) {
+            var result = `<strong>${feature.properties.title}</strong><br>`;
+            {% for f in fields %}
+            if(feature.properties[{{ f.field | jsonify }}]) { result += feature.properties[{{ f.field | jsonify }}] + `<br>`; }
+            {% endfor %}
+            container.innerHTML = result;
+        }
     };
     var searchCtrl = L.control.fuseSearch(options);
     searchCtrl.addTo(map);
@@ -73,24 +84,15 @@
         /* calculate item link */
         var itemHref = '{{ "/item.html?id=" | relative_url }}' + feature.properties.id;
         /* find object thumb based on format */
-        var thumbSrc;
-        if (feature.properties.format.includes("audio")) {
-            thumbSrc = '{{ "/assets/img/audio.svg" | relative_url }}';
-        } else if (feature.properties.format.includes("pdf")) {
-            thumbSrc = '{{ "/assets/img/pdf.svg" | relative_url }}';
-        } else if (feature.properties.format.includes("video")) {
-            thumbSrc = 'https://img.youtube.com/vi/' +  feature.properties.youtube + '/default.jpg';
-        } else {
-            thumbSrc = '{{ "/objects/" | relative_url }}' +  feature.properties.filename;
-        }    
+        var thumbSrc = feature.properties.filename;  
         /* create popup content */
         var popupTemplate = '<h4><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h4><div class="text-center"><a href="' + itemHref + 
             '" ><img class="mapthumb img-thumb" src="' +  thumbSrc + '" alt="item thumbnail"></a></div><p class="mt-1">';
         /* add metadata fields */
         {% for f in fields %}{% if f.display_name %}
-        if (feature.properties[{{ f.field | escape | jsonify }}]) {
-            popupTemplate += '<strong>{{ f.display_name }}:</strong> ' + feature.properties[{{ f.field | escape | jsonify }}] + '<br>'; 
+        if (feature.properties[{{ f.field | jsonify }}]) {
+            popupTemplate += '<strong>{{ f.display_name }}:</strong> ' + feature.properties[{{ f.field | jsonify }}] + '<br>'; 
         }
         {% endif %}{% endfor %}
         /* add object link button to popup */

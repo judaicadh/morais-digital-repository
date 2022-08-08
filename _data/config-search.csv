@@ -1,8 +1,8 @@
 field,index,display
-title,true,true
-date,true,true
-metadata.description[1],true,true
-metadata.personal_name,true,true
-metadata.geographic_subject,true,true
-metadata.format,true,true
-metadata.language,true,true
+title,TRUE,TRUE
+date-year,TRUE,TRUE
+metadata.description[1],TRUE,TRUE
+metadata.personal_name,TRUE,TRUE
+metadata.geographic_subject,TRUE,TRUE
+metadata.format[1],TRUE,TRUE
+metadata.language,TRUE,TRUE

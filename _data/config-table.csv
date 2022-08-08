@@ -1,6 +1,6 @@
 field,display_name
 title,Title
-date,Date
+date-year,Date
 metadata.personal_name,People
 metadata.geographic_subject,Place
 metadata.format,Format
