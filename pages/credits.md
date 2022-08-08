@@ -20,7 +20,9 @@ This project would not be possible without the assistance of the following:
 
 * Mary Ellen Burd, Director of Strategic Communications
 * Chandra Collins, Imaging Specialist
+* Jessie Dummer, Digitization Project Coordinator
 * Doug Emery, Special Collections Digital Content Programmer
+* Cassandra Hradil, Digital Humanities Specialist
 * Jesselson Family Foundation
 * Michael Jesselson
 * Michael Kanning, Senior Developer
