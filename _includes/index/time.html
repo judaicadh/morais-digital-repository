@@ -1,4 +1,4 @@
-{%- assign raw-dates = items | map: 'date' | compact | uniq  -%}
+{%- assign raw-dates = items | map: 'date-year' | compact | uniq  -%}
 {%- capture clean-years -%}
 {% for date in raw-dates %}
 {% if date contains "-" %}
